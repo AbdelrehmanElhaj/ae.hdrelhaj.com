@@ -4,7 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Abdelrehman Elhaj — Systems & Cloud Engineer</title>
+  <meta name="theme-color" content="#040d1c" />
   <meta name="description" content="Systems & Cloud Engineer specializing in Odoo ERP, AWS/OCI Cloud, Java Spring Boot, and Mobile Development. Based in Riyadh, serving global clients." />
+  <meta property="og:title" content="Abdelrehman Elhaj — Systems & Cloud Engineer" />
+  <meta property="og:description" content="ERP, cloud, backend, and mobile solutions for Saudi and global clients." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ae.hdrelhaj.com" />
+  <meta property="og:site_name" content="Abdelrehman Elhaj" />
+  <meta property="og:image" content="https://ae.hdrelhaj.com/preview.svg" />
+  <meta property="og:image:alt" content="Abdelrehman Elhaj portfolio preview" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Abdelrehman Elhaj — Systems & Cloud Engineer" />
+  <meta name="twitter:description" content="ERP, cloud, backend, and mobile solutions for Saudi and global clients." />
+  <meta name="twitter:image" content="https://ae.hdrelhaj.com/preview.svg" />
+  <meta name="twitter:image:alt" content="Abdelrehman Elhaj portfolio preview" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="canonical" href="https://ae.hdrelhaj.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -128,6 +145,46 @@
     }
 
     .nav-cta:hover { opacity: 0.85; }
+
+    .nav-toggle {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      padding: 0;
+    }
+
+    .nav-toggle span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 999px;
+      position: relative;
+    }
+
+    .nav-toggle span::before,
+    .nav-toggle span::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 22px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 999px;
+      transition: transform 0.2s ease;
+    }
+
+    .nav-toggle span::before { top: -6px; }
+    .nav-toggle span::after { top: 6px; }
+
+    .nav-toggle.open span { background: transparent; }
+    .nav-toggle.open span::before { transform: translateY(6px) rotate(45deg); }
+    .nav-toggle.open span::after { transform: translateY(-6px) rotate(-45deg); }
 
     /* ── HERO ── */
     #hero {
@@ -727,7 +784,28 @@
 
     /* ── RESPONSIVE ── */
     @media (max-width: 768px) {
-      .nav-links { display: none; }
+      .nav-toggle { display: flex; }
+      .nav-links {
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0;
+        padding: 12px 5% 20px;
+        background: rgba(4,13,28,0.98);
+        border-bottom: 0.5px solid var(--border);
+      }
+      .nav-links.open { display: flex; }
+      .nav-links li { width: 100%; }
+      .nav-links a {
+        display: block;
+        width: 100%;
+        padding: 12px 0;
+      }
+      .nav-cta { display: none; }
       .about-grid { grid-template-columns: 1fr; gap: 40px; }
       .hero-stats { gap: 24px; }
       section { padding: 72px 5%; }
@@ -749,6 +827,9 @@
       <img src="data:image/webp;base64,UklGRqwDAABXRUJQVlA4IKADAADQEwCdASp4AHgAPpFGnkslo6KhpJVZwLASCUAaNg2V3o2G3I8Tn1gPRb5AHWwegB0t+RJw2mjVXf2+/VvAVHozo5MI0Pfrbehd0scYwettHtKItrCPKZn1UaMZFFGlTQy02CZFQUZ8Bm/u5tOrFtNdWiTk/dftSz8SQCCenbUu/HsB1rjYW8aGbzLGdAGaDmh2AMEMGBuPvO2XBQiCZoy/2A2WrengAAD++Wcf3RVdMv2BeFzdYPmvDuW6B/7grT+DEeu5IhBVzvJa65ivqWhB8siMBnxn+q6/6lRm5ATO00Vez3QgGocq1UlMIO/izLZIu7n3eH7tfNOljSPNpM/M2+IGBZ4yhVzkB1+WfWPWBtfLDSweQ0vBkD2IgIVn61qcoVuhjCCLoILqKS63Z80qd5kv6P1shT9M1QRwvwGeP7IVtKrjWfkGLHr+QKUMOMUiRcPxrlXMw+wdJ7kqTQ4s32d+8WgwPGBXx+GtIu99koFv2pin+zJhcNCRl2PA7ycweeh00MmH0MxCJlAJN2SXub7y5wmNzpwlf7juidcQVdJqztrkREF0xPGiKyvY93TLYtx8EKKA6KpVIOS1oGuOTdaDwpBht+ko0FmeNgtgRDt+A95c87d6mWOJWaKnVkWIZWgA54vF0umk2/Ut4tL2k8M1EuzPh/9fYt63zwY2woUxVgCc6Z/kYWoOf3a8/7jeEQ1W3umYTs9Scs9VYzW4sht0I5JzCgW3xSACOJ0T5nAHawxDYIvKXX56/1Owy/9aaogd/jvFwXg2Gxz+msGzyMQgFehdXN9n/FD31n6VSz5Imdndu/GstmIzfX4Cfdx+phNPkQr/ixv+Atd6OJnmfoAuKSKxMEP2bDDBTM8IE5UhH2C1pg7UYo3UAyx+Hj1ulSIeYSZT3r6zjNhM9PXDeG6zZrVYwv3BBJk4AT8AdWehuNQmfNlG7qqbBI0CGdEss5DnePUf2/5Qylkn9J6gXnMK5rf1/c/9P+t8gOCEZy7YEciH61fzw823NkJbjsTwOwAtct2XJxXMUHv5d1qk6SLsb9OBF6frTlJ9HY0XflfGK38lRitBaO8D33EMtAiByoSwjJ2zTfRdenAY4Fpxaqx9lrgtBvbBipcVa4CZghxkO5/Lv5pcZxb5Gtq39ruZqXTSnIpy0zRlKGf8+R3xgr8oiDMasGbbULk7NoACOncLB9kVGiDHuk7JMAgFpYHU6BaOuTs7gn++anm7QAAA" alt="AE logo" style="width:36px;height:36px;border-radius:8px;display:block;" />
       <span class="nav-logo-text">ae.hdrelhaj.com</span>
     </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span>
+    </button>
     <ul class="nav-links">
       <li><a href="#services">Services</a></li>
       <li><a href="#portfolio">Portfolio</a></li>
@@ -1102,7 +1183,7 @@
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-left">© 2025 Abdelrehman Elhaj · ae.hdrelhaj.com</div>
+    <div class="footer-left">© <span id="year"></span> Abdelrehman Elhaj · ae.hdrelhaj.com</div>
     <div class="footer-right">
       <a href="#hero">Top</a>
       <a href="#services">Services</a>
@@ -1111,5 +1192,6 @@
     </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

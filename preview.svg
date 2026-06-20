@@ -1,0 +1,30 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#040D1C"/>
+  <rect x="0" y="0" width="1200" height="630" fill="url(#bg)"/>
+  <g opacity="0.12">
+    <path d="M0 120H1200" stroke="#00C8FF"/>
+    <path d="M0 240H1200" stroke="#00C8FF"/>
+    <path d="M0 360H1200" stroke="#00C8FF"/>
+    <path d="M0 480H1200" stroke="#00C8FF"/>
+    <path d="M120 0V630" stroke="#00C8FF"/>
+    <path d="M360 0V630" stroke="#00C8FF"/>
+    <path d="M600 0V630" stroke="#00C8FF"/>
+    <path d="M840 0V630" stroke="#00C8FF"/>
+    <path d="M1080 0V630" stroke="#00C8FF"/>
+  </g>
+  <rect x="90" y="90" width="70" height="70" rx="16" fill="#00C8FF"/>
+  <text x="118" y="139" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700" fill="#040D1C">AE</text>
+  <text x="190" y="145" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="600" fill="#00C8FF">ae.hdrelhaj.com</text>
+  <text x="90" y="250" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="700" fill="#FFFFFF">Abdelrehman</text>
+  <text x="90" y="330" font-family="Inter, Arial, sans-serif" font-size="72" font-weight="700" fill="#FFFFFF">Elhaj</text>
+  <text x="90" y="390" font-family="Inter, Arial, sans-serif" font-size="28" fill="#00C8FF">Systems &amp; Cloud Engineer · ERP Specialist</text>
+  <text x="90" y="450" font-family="Inter, Arial, sans-serif" font-size="22" fill="#B7C7E5">Odoo ERP · AWS &amp; OCI · Java Spring Boot · Mobile</text>
+  <rect x="90" y="500" width="180" height="52" rx="10" fill="#00C8FF"/>
+  <text x="180" y="535" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#040D1C">Hire on Upwork</text>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#071428"/>
+      <stop offset="1" stop-color="#040D1C"/>
+    </linearGradient>
+  </defs>
+</svg>
